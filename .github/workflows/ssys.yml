@@ -1,0 +1,23 @@
+name: Aplicação SSYS
+
+on: [pull_request]
+
+jobs:
+  build:
+    env:
+      PIPENV_NO_INHERIT: 1
+      PIPENV_IGNORE_VIRTUALENVS: 1
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Instalar Dependências
+        run: |
+          sudo apt-get install python3-pip
+#      - name: Rodar Testes Automáticos
+#        run: |
+#          pip run pytest apissys
