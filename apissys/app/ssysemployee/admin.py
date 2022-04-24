@@ -9,7 +9,7 @@ class Employees_Admin(admin.ModelAdmin):
     # Filtros
     list_filter = ('birth_date', 'salary')
     fieldsets = (
-        (u'EMPLOYEES / DETAIL', {'fields': ('id', 'name', 'email', 'department', 'salary', 'birth_date')}),
+        (u'EMPLOYEES / DETAIL', {'fields': ('name', 'email', 'department', 'salary', 'birth_date')}),
     )
 
 
