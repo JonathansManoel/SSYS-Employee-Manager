@@ -1,7 +1,5 @@
-"""
 import pytest
 from rest_framework.reverse import reverse
-from apissys.app.ssysemployee.api.viewsets import Employees_ViewSet
 from .models import Employees
 from django.test import TestCase
 from rest_framework.test import APIClient
@@ -32,4 +30,3 @@ class ViewTestCase(TestCase):
             reverse('create'),
             self.employees,
             format="json")
-"""

@@ -9,15 +9,22 @@ class Employees_ViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated,)
     queryset = models.Employees.objects.all()
 
+    def get_view_name(self):
+        return "SSYS Employee"
+
 
 class Age_Reports_ViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.Age_Reports_Serialazer
     permission_classes = (IsAuthenticated,)
 
     def get_queryset(self):
-        younger = models.Employees.objects.all().order_by('birth_date').first()
-        older = models.Employees.objects.all().order_by('birth_date').last()
+        queryset = models.Employees.objects.all().order_by('birth_date')
+        younger = queryset.first()
+        older = queryset.last()
         return younger, older
+
+    def get_view_name(self):
+        return "Age Report"
 
 
 class Salary_Reports_ViewSet(viewsets.ModelViewSet):
@@ -25,6 +32,10 @@ class Salary_Reports_ViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated,)
 
     def get_queryset(self):
-        lowest = models.Employees.objects.all().order_by('salary').first()
-        highest = models.Employees.objects.all().order_by('salary').last()
+        queryset = models.Employees.objects.all().order_by('salary')
+        lowest = queryset.first()
+        highest = queryset.last()
         return lowest, highest
+
+    def get_view_name(self):
+        return "Salary Report"
