@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from functools import partial
 from pathlib import Path
-
+import django_heroku
 import dj_database_url
 from decouple import config, Csv
 
@@ -142,3 +142,5 @@ REST_FRAMEWORK = {
     'DATE_FORMAT': "%d/%m/%Y",
     # 'DATE_INPUT_FORMATS': ["%d-%m-%Y"],
 }
+
+django_heroku.settings(locals())
