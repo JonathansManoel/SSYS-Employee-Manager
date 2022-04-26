@@ -149,4 +149,4 @@ REST_FRAMEWORK = {
     'DATE_FORMAT': "%d/%m/%Y",
 }
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
