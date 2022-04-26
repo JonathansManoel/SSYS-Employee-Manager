@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'apissys.wsgi.application'
 
 default_db = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
-database_url = partial(dj_database_url.parse, conn_max_age=600)
+database_url = partial(dj_database_url.parse)
 
 DATABASES = {
     'default': config('DATABASE_URL', default=default_db, cast=database_url)
