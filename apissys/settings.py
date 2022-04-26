@@ -14,6 +14,7 @@ from functools import partial
 from pathlib import Path
 import dj_database_url
 from decouple import config, Csv
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -146,3 +147,5 @@ REST_FRAMEWORK = {
     'DATE_FORMAT': "%d/%m/%Y",
     # 'DATE_INPUT_FORMATS': ["%d-%m-%Y"],
 }
+
+django_heroku.settings(locals())
