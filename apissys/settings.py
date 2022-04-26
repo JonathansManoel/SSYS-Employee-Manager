@@ -143,4 +143,4 @@ REST_FRAMEWORK = {
     # 'DATE_INPUT_FORMATS': ["%d-%m-%Y"],
 }
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
