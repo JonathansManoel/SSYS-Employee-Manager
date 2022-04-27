@@ -18,7 +18,8 @@
 #### Instalar dependências:
 `pip install requirements.txt`
 
-`pip install django pip install djangorestframework`
+#### Instalar dependências, inclusive de desenvolvimento:
+```pip install requirements-dev.txt```
 
 #### Criar o Projeto:
 `django-admin startproject "nomedoseuprojeto" .`
