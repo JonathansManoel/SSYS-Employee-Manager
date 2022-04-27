@@ -146,7 +146,7 @@
 #### Criando usuário:
 `heroku run python manage.py createsuperuser`
 
-### Monitorando falhas da aplicação:
+## Monitorando falhas da aplicação:
 - Instalar o Sentry.
 - Realizar as configurações conforme documentação.
 - [Documentação ➔ Sentry.io](https://docs.sentry.io/platforms/python/guides/django/)
