@@ -22,8 +22,6 @@ gunicorn==20.1.0
     # via -r requirements.txt
 mccabe==0.6.1
     # via flake8
-psycopg2==2.9.3
-    # via -r requirements.txt
 psycopg2-binary==2.9.3
     # via -r requirements.txt
 pycodestyle==2.8.0
