@@ -1,6 +1,6 @@
 import pytest
 from rest_framework.reverse import reverse
-from .models import Employees
+from apissys.app.ssysemployee.models import Employees
 from django.test import TestCase
 from rest_framework.test import APIClient
 
