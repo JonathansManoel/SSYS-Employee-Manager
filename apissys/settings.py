@@ -145,7 +145,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
     ),
-    'DATE_FORMAT': "%d/%m/%Y",
+    'DATE_FORMAT': "%d-%m-%Y",
 }
 SENTRY_DSN = config('SENTRY_DSN')
 

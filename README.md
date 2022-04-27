@@ -2,23 +2,28 @@
 
 ### Aplicação Rodando no Ambiente Local:
 - Login:
-![](../../Área de Trabalho/testestecnicos/ssys/login.png)
+
+![Login](img/login.png)
 
 - Rota Inicial:
-![](../../Área de Trabalho/testestecnicos/ssys/ssys-pgInicial.png)
+
+![Inicial](img/ssys-pgInicial.png)
 
 - Employees:
-![](../../Área de Trabalho/testestecnicos/ssys/employee.png)
+
+![Employees](img/employee.png)
 
 - Employees Delete/Update:
-![](../../Área de Trabalho/testestecnicos/ssys/employees-1.png)
+
+![Employees1](img/employees-1.png)
 
 - Employees Age:
-![](../../Área de Trabalho/testestecnicos/ssys/employees-age.png)
+
+![Age](img/employees-age.png)
 
 - Employees Salary:
-![](../../Área de Trabalho/testestecnicos/ssys/employees-salary.png)
 
+![Salary](img/employees-salary.png)
 
 ### Aplicação disponível ➔ [SSYS_EMPLOYEE](https://ssys-employee-manager.herokuapp.com/)
 #### Login de visualização para a Aplicação:
@@ -138,3 +143,10 @@
 #### Criando as tabelas para o Banco de Dados:
 `heroku run python manage.py migrate`
 
+#### Criando usuário:
+`heroku run python manage.py createsuperuser`
+
+### Monitorando falhas da aplicação:
+- Instalar o Sentry.
+- Realizar as configurações conforme documentação.
+- [Documentação ➔ Sentry.io](https://docs.sentry.io/platforms/python/guides/django/)
