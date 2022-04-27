@@ -6,6 +6,8 @@
 #
 asgiref==3.5.0
     # via django
+certifi==2021.10.8
+    # via sentry-sdk
 dj-database-url==0.5.0
     # via -r requirements.in
 django==4.0.4
@@ -22,8 +24,12 @@ python-decouple==3.6
     # via -r requirements.in
 pytz==2022.1
     # via djangorestframework
+sentry-sdk==1.5.10
+    # via -r requirements.in
 sqlparse==0.4.2
     # via django
+urllib3==1.26.9
+    # via sentry-sdk
 whitenoise==6.0.0
     # via -r requirements.in
 

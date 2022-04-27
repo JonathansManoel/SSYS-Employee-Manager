@@ -1,5 +1,25 @@
 # SSYS-Employee-Manager
 
+### Aplicação Rodando no Ambiente Local:
+- Login:
+![](../../Área de Trabalho/testestecnicos/ssys/login.png)
+
+- Rota Inicial:
+![](../../Área de Trabalho/testestecnicos/ssys/ssys-pgInicial.png)
+
+- Employees:
+![](../../Área de Trabalho/testestecnicos/ssys/employee.png)
+
+- Employees Delete/Update:
+![](../../Área de Trabalho/testestecnicos/ssys/employees-1.png)
+
+- Employees Age:
+![](../../Área de Trabalho/testestecnicos/ssys/employees-age.png)
+
+- Employees Salary:
+![](../../Área de Trabalho/testestecnicos/ssys/employees-salary.png)
+
+
 ### Aplicação disponível ➔ [SSYS_EMPLOYEE](https://ssys-employee-manager.herokuapp.com/)
 #### Login de visualização para a Aplicação:
 #### Usuário: `testeapi`
